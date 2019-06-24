@@ -11,7 +11,7 @@ Output Label: Argument_against
 ## Training
 We trained (and evaluated) our models on the [UKP Sentential Argument Mining Corpus](https://www.informatik.tu-darmstadt.de/ukp/research_6/data/argumentation_mining_1/ukp_sentential_argument_mining_corpus/index.en.jsp), which annotated 25,492 sentences over eight controversial topics.
 
-Due to copyright issues, we cannot distribute the corpus directly. Instead, you find in the `datasets/ukp` a Java program, that re-constructs the corpus. How to run this Java program is described in the `datasets/ukp/README.txt`.
+Due to copyright issues, we cannot distribute the corpus directly. You need to download it from the website and run a Java program, to re-construct the corpus from the sources. More information can be found in the README.txt of the UKP Sentential Argument Mining Corpus.
 
 Once you have re-created the UKP Sentential Argument Mining Corpus, you can fine-tune BERT by running the `train_ukp.sh` script:
 ```
@@ -23,7 +23,7 @@ This fine-tunes BERT on seven topics and evaluates the performance on the eigth 
 
 If you want to train BERT on all 25,492 sentences from the UKP Argument Corpus, run `train_ukp_all_data.sh`.
 
-We also provide a data reader and script for the [IBM Debater dataset](http://www.research.ibm.com/haifa/dept/vst/debating_data.shtml). See `train_ibm.sh` how to train BERT for this dataset and see `datasets/ibm/README.txt` for further details on that dataset.
+We also provide a data reader and script for the [IBM Debater dataset](http://www.research.ibm.com/haifa/dept/vst/debating_data.shtml). See `train_ibm.sh` how to train BERT for this dataset. As before, you first need to download the corpus and unzip it to `datasets/ibm/.
 
 **Note:** Training on GPU leads to non-determinisitc results. For scientific experiments, we recommend to train with multiple random seeds and to average results.
 
