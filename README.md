@@ -108,6 +108,12 @@ Similarity: 0.20616204
 ```
 
 
+## Argument Similarty Performance
+
+![UKP Aspects Performance](https://public.ukp.informatik.tu-darmstadt.de/reimers/2019_acl-BERT-argument-classification-and-clustering/images/table_UKP_Aspects_results.png)
+
+![AFS Performance](https://public.ukp.informatik.tu-darmstadt.de/reimers/2019_acl-BERT-argument-classification-and-clustering/images/table_AFS_results.png)
+
 
 
 
