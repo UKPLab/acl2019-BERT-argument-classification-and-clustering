@@ -2,7 +2,7 @@
 This folder contains code to fine-tune BERT to estimate the similarity between two arguments. We fine-tune BERT either on the [UKP Argument Aspect Similarity Corpus](https://www.informatik.tu-darmstadt.de/ukp/research_6/data/argumentation_mining_1/ukp_argument_aspect_similarity_corpus/ukp_argument_aspect_similarity_corpus.en.jsp) or on the [Argument Facet Similarity (AFS) Corpus](https://nlds.soe.ucsc.edu/node/44) from Misra et al., 2016.
 
 ## Setup
-For the setup, see the [README.md](../) in the main folder.
+For the setup, see the [README.md](https://github.com/UKPLab/acl2019-BERT-argument-classification-and-clustering/) in the main folder.
 
 ## Example
 You can download two pre-trained models:

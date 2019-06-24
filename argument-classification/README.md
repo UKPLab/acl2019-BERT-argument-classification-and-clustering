@@ -8,6 +8,11 @@ Sentence: Zoo confinement is psychologically damaging to animals.
 Output Label: Argument_against
 ```
 
+
+## Setup
+For the setup, see the [README.md](https://github.com/UKPLab/acl2019-BERT-argument-classification-and-clustering/) in the main folder.
+
+
 ## Training
 We trained (and evaluated) our models on the [UKP Sentential Argument Mining Corpus](https://www.informatik.tu-darmstadt.de/ukp/research_6/data/argumentation_mining_1/ukp_sentential_argument_mining_corpus/index.en.jsp), which annotated 25,492 sentences over eight controversial topics.
 
