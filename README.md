@@ -1,7 +1,7 @@
 # Argument Classification and Clustering using BERT
 In our publication [Classification and Clustering of Arguments with Contextualized Word Embeddings]() (ACL 2019) we fine-tuned the BERT network to:
-- Perform sentential argument classification (i.e., given a sentence with an argument for a controversial topic, classify this sentence as pro, con, or no argument). Details can be found in [argument-classification/README.md]
-- Estimate the argument similarity (0...1) given two sentences. This argument similarity score can be used in conjuction with hierarchical agglomerative clustering to perform aspect-based argument clustering. Details can be found in [argument-similarity/README.md]
+- Perform sentential argument classification (i.e., given a sentence with an argument for a controversial topic, classify this sentence as pro, con, or no argument). Details can be found in [argument-classification/README.md](argument-classification/README.md)
+- Estimate the argument similarity (0...1) given two sentences. This argument similarity score can be used in conjuction with hierarchical agglomerative clustering to perform aspect-based argument clustering. Details can be found in [argument-similarity/README.md](argument-similarity/README.md)
 
 
 # Citation
@@ -39,7 +39,7 @@ pip install pytorch-pretrained-bert==0.6.2 sklearn scipy
 ```
 
 # Argument Classification
-Please see [argument-classification/README.md] for full details.
+Please see [argument-classification/README.md](argument-classification/README.md) for full details.
 
 Given a sentence and a topic, classify if the sentence is a pro, con, or no argument. For example:
 ```
@@ -53,7 +53,7 @@ You can download pre-trained models from here, which were trained on all eight t
 - [argument_classification_ukp_all_data_large_model.zip](https://public.ukp.informatik.tu-darmstadt.de/reimers/2019_acl-BERT-argument-classification-and-clustering/models/argument_classification_ukp_all_data_large_model.zip)
 
 
-See [argument-classification/inference.py] how to use these models for classifying new sentences.
+See [argument-classification/inference.py](argument-classification/inference.py) how to use these models for classifying new sentences.
 
 In a leave-one-topic out evaluation, the BERT model achieves the following performance.
 
@@ -61,14 +61,16 @@ In a leave-one-topic out evaluation, the BERT model achieves the following perfo
 
 
 # Argument Similarity & Clustering
-Given two sentences, the code in [argument-similarity] returns a value between 0 and 1 indicating the similarity between the arguments. This can be used for agglomorative clustering to find & cluster similar arguments.
+See [argument-similarity/README.md](argument-similarity/README.md) for full details.
+
+Given two sentences, the code in [argument-similarity](argument-similarity/) returns a value between 0 and 1 indicating the similarity between the arguments. This can be used for agglomorative clustering to find & cluster similar arguments.
 
 You can download two pre-trained models:
 - [argument_similarity_ukp_aspects_all.zip](https://public.ukp.informatik.tu-darmstadt.de/reimers/2019_acl-BERT-argument-classification-and-clustering/models/argument_similarity_ukp_aspects_all.zip) - trained on the complete [UKP Argument Aspect Similarity Corpus](https://www.informatik.tu-darmstadt.de/ukp/research_6/data/argumentation_mining_1/ukp_argument_aspect_similarity_corpus/ukp_argument_aspect_similarity_corpus.en.jsp)
 - [argument_similarity_misra_all.zip](https://public.ukp.informatik.tu-darmstadt.de/reimers/2019_acl-BERT-argument-classification-and-clustering/models/argument_similarity_misra_all.zip) - trained on the complete [Argument Facet Similarity (AFS) Corpus](https://nlds.soe.ucsc.edu/node/44) from Misra et al.
 
 
-See [argument-similarity/inference.py] for an example. This example computes the pairwise similarity between arguments on different topics.
+See [argument-similarity/inference.py](argument-similarity/inference.py) for an example. This example computes the pairwise similarity between arguments on different topics.
 The output should be something like this for the model trained on the UKP corpus:
 ```
 Predicted similarities (sorted by similarity):
