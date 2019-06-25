@@ -64,12 +64,12 @@ Run `train_ukp.sh` to train on the  UKP Aspects Corpus using this 4 fold cross-t
 
 ## Training Argument Facet Similarity (AFS) Corpus
 
-The [Argument Facet Similarity (AFS) Corpus](https://nlds.soe.ucsc.edu/node/44) must be download from that website and unzipped into the `datasets/misra/` folder, i.e., the file `datasets/misra/ArgParis_DP.csv' should exists after unzipping the AFS corpus.
+The [Argument Facet Similarity (AFS) Corpus](https://nlds.soe.ucsc.edu/node/44) must be download from that website and unzipped into the `datasets/misra/` folder, i.e., the file `datasets/misra/ArgParis_DP.csv` should exists after unzipping the AFS corpus.
 
 Run `train_misra.sh` to train on the Misra AFS Corpus. The `train_misra_all.sh` fine-tunes BERT on all 3 topics of the AFS data, without any development or test set.
 
 ## Performance
-See our paper ([Classification and Clustering of Arguments with Contextualized Word Embeddings]())  for further details.
+See our paper ([Classification and Clustering of Arguments with Contextualized Word Embeddings](https://arxiv.org/abs/1906.09821))  for further details.
 
 ### UKP Aspect Corpus
 The performance on the UKP Aspects Corpus is evaluated in 4-fold cross-topic setup. See `evaluation_with_clustering.py` and `evaluation_without_clustering.py` to compute the performance scores. In the paper, we achieved the following performances:
