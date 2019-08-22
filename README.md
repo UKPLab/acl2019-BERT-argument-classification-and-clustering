@@ -15,7 +15,7 @@ If you find the implementation useful, please cite the following paper: [Classif
   month     = {07},
   year      = {2019},
   address   = {Florence, Italy},
-  pages     = {to appear},
+  pages     = {567--578},
   url       = {https://arxiv.org/abs/1906.09821}
 }
 ``` 
