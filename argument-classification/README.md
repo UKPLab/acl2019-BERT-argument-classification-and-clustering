@@ -89,7 +89,7 @@ Note, when you change the topic for an argument, as in the last example, the mod
 
 ## Performance
 
-In a leave-one-topic out evaluation, the BERT model achieves the following performance.
+In a cross-topic evaluation, the BERT model achieves the following performance.
 
 ![Classification Performance](https://public.ukp.informatik.tu-darmstadt.de/reimers/2019_acl-BERT-argument-classification-and-clustering/images/table_classification_results.png)
 
