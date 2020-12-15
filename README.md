@@ -1,11 +1,11 @@
 # Argument Classification and Clustering using BERT
-In our publication [Classification and Clustering of Arguments with Contextualized Word Embeddings]() (ACL 2019) we fine-tuned the BERT network to:
+In our publication [Classification and Clustering of Arguments with Contextualized Word Embeddings](https://arxiv.org/abs/1906.09821) (ACL 2019) we fine-tuned the BERT network to:
 - Perform sentential argument classification (i.e., given a sentence with an argument for a controversial topic, classify this sentence as pro, con, or no argument). Details can be found in [argument-classification/README.md](argument-classification/README.md)
 - Estimate the argument similarity (0...1) given two sentences. This argument similarity score can be used in conjuction with hierarchical agglomerative clustering to perform aspect-based argument clustering. Details can be found in [argument-similarity/README.md](argument-similarity/README.md)
 
 
 # Citation
-If you find the implementation useful, please cite the following paper: [Classification and Clustering of Arguments with Contextualized Word Embeddings]()
+If you find the implementation useful, please cite the following paper: [Classification and Clustering of Arguments with Contextualized Word Embeddings](https://arxiv.org/abs/1906.09821)
 
 ```
 @InProceedings{Reimers:2019:ACL,
@@ -15,8 +15,8 @@ If you find the implementation useful, please cite the following paper: [Classif
   month     = {07},
   year      = {2019},
   address   = {Florence, Italy},
-  pages     = {},
-  url       = {}
+  pages     = {567--578},
+  url       = {https://arxiv.org/abs/1906.09821}
 }
 ``` 
 
@@ -24,7 +24,7 @@ If you find the implementation useful, please cite the following paper: [Classif
 
 Contact person: Nils Reimers, Rnils@web.de
 
-https://www.ukp.tu-darmstadt.de/ https://www.tu-darmstadt.de/
+https://www.ukp.tu-darmstadt.de/
 
 
 Don't hesitate to send us an e-mail or report an issue, if something is broken (and it shouldn't be) or if you have further questions.
